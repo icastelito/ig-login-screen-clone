@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+:root {
+
+    --white: #fefefe ;
+    --lightgrey: #f9f9f9ff;;
+    --mediumgrey: #a7a7a7;
+    --grey: #c4c4c4;
+    --darkgrey: #343434;
+    --black: #1D021D;
+    --lightblue: #b2dffc;
+    --blue: #1b77f3;
+    --darkblue: #3b5998;
+    --red: #CF3C3f;
+}
+
+body {
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--lightgrey);
+}
+
+
+
+.instagram-envelope {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 3%;
+    justify-content: center;
+    grid-template-areas:
+        'left1 middle11 middle12 right1'
+        'left2 middle21 middle22 right2'
+        'left2 middle31 middle32 right2';
+
+}
+
+.phone{
+    grid-area: middle11;
+    border-radius: 2px;
+    margin-top: 2%;
+    margin-right: 20%;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    width: 500px;
+}
+
+.cellphone{
+    height: 130%;
+}
+
+.login {
+   
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--grey);
+    margin-top: 2%;
+    border-radius: 2px;
+    justify-items: center;
+    grid-area: middle12;
+    padding: 6%;
+    height: 600px;
+    width: 500px;
+    background-color: var(--white);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.instagram-name{
+width: 250px;
+
+}
+
+.signup {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--grey);
+    border-radius: 3px;
+    margin-top: 3%;
+    height: 100px;
+    width: 500px;
+    background-color:var(--white);
+    grid-area: middle22;
+}
+
+.rotuloDeLogin {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--grey);
+    border-radius: 3px;
+}
+
+.rotuloDeLogin span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--mediumgrey);
+    margin: 20px;
+    cursor: text;
+    transition: all 300ms ease;
+
+}
+
+.input {
+    width: 100%;
+    background-color: var(--lightgrey);
+    border: 2px solid rgba(0, 0, 0, 0%);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: var(--darkgrey)
+}
+
+.logo {
+    color: var(--darkgrey);
+    font-size: 1.5em;
+    margin-bottom: 80px;
+
+}
+
+.rotuloDeLogin .ativarSpan {
+    font-size: 0.7em;
+    margin: 8px 10px;
+
+}
+
+.input:focus {
+    background-color: var(--white);
+    border: 2px solid var(--darkgrey);
+
+}
+
+
+.botaoDeLogin:disabled{
+
+    cursor: auto;
+    background-color: var(--lightblue);
+    border: 2px solid var(--lightgrey);
+}
+
+
+.botaoDeLogin {
+    font-size: 18px;
+    font-weight:700;
+    color: var(--white);
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+
+}
+
+.divisoria {
+    padding-top: 5%;
+}
+
+.divisoriaLateral{
+    display: inline-block;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    height: 8px;
+    width: 35%;
+
+}
+
+.divisoriaCentral{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.logoFacebook{
+    width: 20px;
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+.logar{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--darkblue);
+}
+.facebookLogin{
+    justify-content: middle;
+    display: inline-block;
+    padding-top: 5%;
+}
+
+.recuperarSenha{
+    cursor: pointer;
+    padding-top: 8%;
+    font-size: 18px;
+    color: var(--darkblue);
+}
+
+.semConta{
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 7%;
+}
+.cadastre{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.aplicativo{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    grid-area: middle32;
+}
+.appstore {
+    display: inline-block;
+    margin-top: 20px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.googleplay{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
